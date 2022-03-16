@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="CSS/one_page_website.css">
+  <script src="JS/one_page_website.js" defer></script>
+  <title>Watson Diecast Sales</title>
+</head>
+
+
+<body>
+
+
+<!--NAV-->
+
+ <div class="topnav">
+   <div id="nav">
+    <div class="menu-container">
+         <ul class="menu">
+            <a href="#home" id="link"><li>HOME</li></a>
+            <a href="#sales" id="link"><li>SALES</li></a>
+            <a href="#contact" id="link"><li>CONTACT</li><a>
+         </ul>
+      </div>
+    </div>
+ </div>
+
+ <!--End NAV-->
+
+ <!-- HEADING or BANNER-->
+ <div id="banner">
+   <p>Watson Diecast Sales</p>
+   </div>
+ </div>
+
+ <!--HOME-->
+ <div id="home">
+     <div class="container">
+         <div class="text-center">
+             <span class="head-main">Welcome to the PREMIER online resource for the diecast hobbiest!</span>
+         </div>
+     </div>
+ </div>
+
+ <!--END HOME-->
+
+ <!--SALES-->
+ <section id="sales">
+     <div class="container">
+     </div>
+        <h2>SALES</h2>
+            <div class="flex-container">
+            </div>
+
+<!--PHOTO CONTAINER 1-->
+
+<div class="row">
+    <div class="column">
+      <img src="HW Thumb/HW_1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      <div class="photo-overlay">
+    </div>
+</div>
+
+<!--END PHOTO CONTAINER 1-->
+
+<!-- PHOTO CONTAINER 2-->
+
+<div class="column">
+    <img src="HW Thumb/HW_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    <div class="photo-overlay">
+  </div>
+</div>
+
+<!--END PHOTO CONTAINER 2-->
+
+<!--PHOTO CONTAINER 3-->
+<div class="column">
+    <img src="HW Thumb/HW_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">  
+    <div class="Photo-overlay">
+  </div>
+</div>
+
+<!--END PHOTO CONTAINER 3-->
+
+<!--VID CONTAINER-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8uHeQXFiAgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+<!--END VID CONTAINER-->
+
+
+<!-- THe Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="HW Thumb/HW_1.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="HW Thumb/HW_2.jpg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="HW Thumb/HW_3.jpg">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+            <img class="demo" src="HW Thumb/HW_1.jpeg" onclick="currentSlide(1)">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="HW Thumb/HW_2.jpg" onclick="currentSlide(2)">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="HW Thumb/HW_3.jpg" onclick="currentSlide(3)">
+        </div>                        
+    </div>
+</div>
+</section>
+
+<!--END SALES-->
+
+<!--CONTACT-->
+<section id="contact">
+    <div class="container">
+        <h2 class="heading-padding">Contact</h2>
+    </div>
+<p>Please subscribe to our newsletter to stay up to date on inventory drops!</p>
+  <form action="" method="post">
+    <input class="rsvp" type="text" value="First Name">
+    <input class="rsvp" type="text" value="Last Name">
+    <input class="rsvp" type="text" value="Email Address">
+    <div class="form-spacer"></div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+<!--END CONTACT-->
+
+<!--FOOTER-->
+
+    <footer>Watson Diecast Sales LLC &nbsp;|&nbsp; &copy; 2020</footer>
+
+<!--END FOOTER-->
+
+
+</body>
+
+</html>
